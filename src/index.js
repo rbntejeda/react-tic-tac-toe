@@ -37,8 +37,8 @@ class Board extends React.Component {
         );
     }
 
-    render() {
-        const status = 'Next player: X';
+    render() {r
+        const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
 
         return (
         <div>
@@ -83,4 +83,3 @@ ReactDOM.render(
     <Game />,
     document.getElementById('root')
 );
-  
